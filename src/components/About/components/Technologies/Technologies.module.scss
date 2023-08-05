@@ -1,0 +1,19 @@
+.technologies{
+    &__technologiesList{
+        gap: 10px;
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__technologiesItem{
+        transition: all 0.3s;
+        max-width: 90px;
+        filter: grayscale(100%);
+        &:hover{
+            filter: grayscale(0%); 
+        }
+    }
+    &__technologiesItemImg{
+        width: 100%;
+    }
+}

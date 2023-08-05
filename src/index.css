@@ -1,13 +1,93 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f6fbff;
+  color:#333;
+  overflow: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #c6cace; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(125, 119, 137); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(125, 119, 137); 
+}
+
+button{
+  cursor: pointer;
+}
+img{
+  display: block;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.contantSection{
+  padding: 92px 100px 30px;
+}
+@media(max-width: 1600px){
+  .contantSection{
+        padding: 95px 50px 30px;
+    }
+}
+
+@media(max-width: 768px){
+  .contantSection{
+        padding: 50px 50px 30px;
+    }
+}
+@media(max-width:576px){
+  .contantSection{
+    padding: 30px;
+  }
+}
+
+.blockTitle{
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.blockTitle__heading{
+  white-space: nowrap;
+  margin-right: 25px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 6px;
+  font-size: 16px;
+  color:#333;
+  line-height: 27px;
+}
+.blockTitle__line{
+  width: 100%;
+  height: 1px;
+  background: #7d7789;
+  display: block;
 }

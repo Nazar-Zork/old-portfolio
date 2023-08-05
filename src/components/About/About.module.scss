@@ -1,0 +1,39 @@
+.about{
+    animation-duration:1s;
+    animation-name: slidein;
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(125,119,137);
+    &__doubleWrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__double{
+        width: 47.5%;
+    }
+}
+@keyframes slidein {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media(max-width:768px){
+    .about{
+        &__doubleWrapper{
+            display: block;
+        }
+        &__double{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,117 @@
+
+.app{
+    &__side{
+        width: 70px;
+        padding: 70px 0;
+        background: #fff;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+    }
+    &__leftSide{
+        left: 0;
+    }
+    &__rightSide{
+        right: 0;
+    }
+    &__container{
+        display: flex;
+        height: 100vh;
+        padding: 70px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    &__photo{
+        width: 40%;
+        background: url(./assets/img/myPhoto.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }
+    &__content{
+        width: 65%;
+        overflow-y: auto;
+    }
+    &__contantSection{
+        overflow-x: hidden;
+        box-sizing: border-box;
+        padding: 92px 100px 92px;
+        height: 100%;
+    }
+}
+
+
+@media(max-width:1600px){
+    .app{
+        &__side{
+            width: 60px;
+            padding: 60px 0;
+        }
+        &__photo{
+            width: 35%;
+        }
+        &__container{
+            padding: 60px;
+        }
+        &__contantSection{
+            padding: 95px 50px;
+        }
+    } 
+}
+@media(max-width:1200px){
+    .app{
+        &__contantSection{
+            padding: 50px;
+        }
+        &__photo{
+            display: none;
+        }
+        &__content{
+            width: 100%;
+        }
+    }
+}
+@media(max-width: 992px){
+    .app{
+        &__container{
+            padding: 60px 50px;
+        }
+        &__side{
+            width: 50px;
+            padding: 60px 0;
+        }
+    }
+}
+@media(max-width: 768px){
+    .app{
+        &__side{
+            width: 0px;
+            padding: 60px 0;
+        }
+        &__container{
+            padding: 60px 0px;
+        }
+    }
+}
+@media(max-width:576px){
+    .app{
+        &__contantSection{
+            padding: 30px;
+        }
+        &__side{
+            width: 0px;
+            padding: 0px;
+            background: #fff;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            z-index: 10;
+        }
+        &__container{
+            height: calc(100vh - 60px);
+            padding-bottom: 0;
+        }
+    }
+}
+

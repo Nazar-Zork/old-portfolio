@@ -1,0 +1,82 @@
+.aboutMe{
+    margin-bottom: 50px;
+    &__myDescriptionWrapper{
+        display: flex;
+        justify-content: space-between;
+        line-height: 27px;
+        font-size: 16px;
+    }
+    &__myDescription,
+    &__myShortDescription{
+        width: 47.5%;
+    }
+    &__descriptionParagraph{
+        margin-bottom: 15px;
+    }
+    &__contentWrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__photo{
+        display: none;
+        background: url(../../../../assets/img/myPhoto.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }
+    &__contentItem{
+        width: 100%
+    }
+    &__descriptionListItem{
+        margin-bottom: 8px;
+        display: flex;
+    }
+    &__descriptionListKey{
+        font-weight: 700;
+        min-width: 100px;
+        display: inline-block;
+    }
+}
+
+@media(max-width:1200px){
+    .aboutMe{
+        &__contentItem{
+            width: 47.5%
+        }
+        &__photo{
+            display: block;
+        }
+        &__myDescription,
+        &__myShortDescription{
+            width: 100%;
+        }
+        &__myDescription{
+            margin-bottom: 30px;
+        }
+        &__myDescriptionWrapper{
+            display: block;
+        }
+    }
+}
+@media(max-width:992px){
+    .aboutMe{
+        &__descriptionListItem{
+            display: block;
+        }
+    }
+}
+@media(max-width:768px){
+    .aboutMe{
+        &__contentWrapper{
+            display: block;
+        }
+        &__contentItem{
+            width: 100%;
+        }
+        &__photo{
+            background-position: 50% 30%;
+            height: 300px;
+            margin-bottom: 30px;
+        }
+    }
+}
